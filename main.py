@@ -158,7 +158,7 @@ def show_contact() -> None:
 
         if value.isdigit() and int(value) <= pages:
             value = int(value)
-            
+
             system('cls' if name == 'nt' else 'clear')
         elif value.lower() == 'q':
             break
@@ -233,7 +233,7 @@ def search_contact() -> None:
         layout['upper']['Результат поиска'].update(table)
 
         system('cls' if name == 'nt' else 'clear')
-        
+
         console.print(layout, end='')
 
         data = search_data.copy()
@@ -277,6 +277,7 @@ def main():
                 console.input(info)
         elif index == 4:
             break
+
         system('cls' if name == 'nt' else 'clear')
 
 
